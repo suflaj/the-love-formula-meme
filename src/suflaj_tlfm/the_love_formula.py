@@ -99,11 +99,6 @@ rc = {
     "ytick.major.size": 5,
 }
 with plt.rc_context(rc):
-    """
-    ax[1].plot(x, lower_y, color="#9b1528", linewidth=5)
-    ax[1].plot(x, upper_y, color="#9b1528", linewidth=5)
-    """
-
     ax[1].spines["left"].set_position("zero")
     ax[1].spines["right"].set_visible(False)
     ax[1].spines["bottom"].set_position("zero")
@@ -112,8 +107,6 @@ with plt.rc_context(rc):
     ax[1].xaxis.get_major_ticks()[2].set_visible(False)
     ax[1].xaxis.get_major_ticks()[4].set_visible(False)
     ax[1].xaxis.get_major_ticks()[5].set_visible(False)
-    # ax[1].xaxis.get_major_ticks()[6].set_visible(False)
-    # ax[1].xaxis.get_major_ticks()[8].set_visible(False)
 
     ax[1].yaxis.get_major_ticks()[3].set_visible(False)
 
