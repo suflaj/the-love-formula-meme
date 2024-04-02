@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "suflaj_tlfm"
+version = "24.04"
+description = "The Love Formula meme"
+readme = "README.md"
+license = { file = "LICENSE" }
+
+authors = [{ name = "Miljenko Šuflaj" }]
+maintainers = [{ name = "Miljenko Šuflaj" }]
+keywords = ["love", "formula", "meme"]
+classifiers = []
+
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib", # Plotting
+    "numpy",      # Functions
+]
+
+[project.urls]
+"Homepage" = "https://github.com/suflaj/the-love-formula-meme"
+"Bug Reports" = "https://github.com/suflaj/the-love-formula-meme/issues"
+"Source" = "https://github.com/suflaj/the-love-formula-meme"
