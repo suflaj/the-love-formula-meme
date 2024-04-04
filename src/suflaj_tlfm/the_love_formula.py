@@ -152,6 +152,9 @@ with plt.rc_context(rc):
         zorder=100,
     )
 
+    ax[1].xaxis.get_major_ticks()[6].set_visible(False)
+    ax[1].xaxis.get_major_ticks()[8].set_visible(False)
+
 output_path = Path(arguments.output_path).resolve()
 output_path.parent.mkdir(
     parents=True,
